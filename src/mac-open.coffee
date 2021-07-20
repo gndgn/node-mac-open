@@ -47,4 +47,4 @@ module.exports = (filenames, options={}, callback=null) ->
 @return {string}
 ###
 escape = (value) ->
-  '"' + value.replace(/(["\s'$`\\])/g,'\\$1') + '"'
+  '"' + value.replace(/(["'$`\\])/g,'\\$1') + '"'
